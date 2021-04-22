@@ -1,0 +1,1 @@
+<mmgame-canvas id="mmgame-canvas" options={{mmgameCanvasOptions}} onError="onMMGameCanvasError" onDidUnmount="onMMGameCanvasDidUnmount" onCanvasInit="onCanvasInit"></mmgame-canvas>

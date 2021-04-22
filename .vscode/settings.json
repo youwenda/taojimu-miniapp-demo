@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "*.axml": "html",
+    "*.acss": "css"
+  },
+  "files.exclude": {
+    "node_modules": true
+  }
+}

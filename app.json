@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "defaultTitle": "淘积木互动小程序样例"
+  },
+  "plugins": {
+    "taojimu": {
+      "version": "*",
+      "provider": "3000000040708051"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "taojimu-miniapp-demo",
+  "version": "1.0.0",
+  "description": "淘积木互动小程序demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "tnpm": {
+    "mode": "yarn"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tbminiapp/mmgamelite-miniapp": "^0.0.1",
+    "@tbminiapp/pixi-miniprogram-engine": "^1.0.26"
+  }
+}

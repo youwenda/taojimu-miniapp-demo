@@ -1,0 +1,152 @@
+{
+  "extEnable": true,
+  "ext": {
+    "createDate": "2020-11-02 17:47:05",
+    "creator": "2247603103",
+    "domain": "https://mo.m.tmall.com/page/3369381?shop_id=113925482",
+    "id": 3369381,
+    "name": "品牌Zone专属页面_202011021744",
+    "componentTree": [
+      {
+        "meta": [
+          {
+            "title": "背景图片",
+            "extension": {
+              "recdimension": "750x0",
+              "recformat": "jpg",
+              "recsize": 0.5,
+              "check": {}
+            },
+            "key": "r_bg",
+            "type": "image"
+          },
+          {
+            "title": "游戏开始文案",
+            "extension": {
+              "maxLength": 10
+            },
+            "key": "startText",
+            "type": "text"
+          },
+          {
+            "title": "游戏次数设置",
+            "extension": {
+              "texttype": "number",
+              "min": 1,
+              "max": 10
+            },
+            "key": "txtChanges",
+            "type": "text"
+          },
+          {
+            "title": "游戏标题颜色",
+            "key": "mcGameTitle",
+            "type": "colorpicker"
+          },
+          {
+            "title": "活动日期范围",
+            "key": "timeRange",
+            "type": "datepickerwrapper"
+          },
+          {
+            "title": "优惠券选择",
+            "min": 1,
+            "max": 2,
+            "api": "coupons",
+            "key": "coupons",
+            "type": "item_change",
+            "extension": {
+              "prefetch": true
+            }
+          },
+          {
+            "title": "宝贝选择",
+            "min": 1,
+            "max": 1,
+            "api": "goods",
+            "key": "items",
+            "type": "item_change"
+          }
+        ],
+        "compExt": {
+          "r_bg": {
+            "src": "https://gw.alicdn.com/imgextra/i4/O1CN01RGxO1L1oRivZfPS55_!!6000000005222-0-tps-750-1624.jpg",
+            "width": 750,
+            "height": 1624,
+            "extension": "jpg"
+          },
+          "startText": "您还有    次机会",
+          "txtChanges": "10",
+          "mcGameTitle": [
+            "#ff003c"
+          ],
+          "timeRange": {
+            "dates": [
+              1619020800000,
+              1619625600000
+            ]
+          },
+          "coupons": [
+            4060260943,
+            4079880234
+          ],
+          "couponsPrefetchData": [
+            {
+              "amount": 100,
+              "applyCount": 20,
+              "applyPlace": "1,2,3",
+              "couponType": 0,
+              "endTime": 1622476799000,
+              "instruction": "使用说明",
+              "isExpire": false,
+              "isPublic": true,
+              "spreadId": 5681547233,
+              "startFee": 1000000,
+              "startTime": 1617897600000,
+              "status": 1,
+              "supplierId": 2247603103,
+              "templateCode": 4060260943,
+              "title": "石头预发券测试",
+              "totalCount": 100000,
+              "uuid": "f6f3f567cb9a4c51a067345bd101f307"
+            },
+            {
+              "amount": 100,
+              "applyCount": 21,
+              "applyPlace": "1,2,3",
+              "couponType": 0,
+              "endTime": 1622476799000,
+              "instruction": "使用说明",
+              "isExpire": false,
+              "isPublic": true,
+              "spreadId": 5712894289,
+              "startFee": 999900,
+              "startTime": 1618588800000,
+              "status": 1,
+              "supplierId": 2247603103,
+              "templateCode": 4079880234,
+              "title": "石头测试券",
+              "totalCount": 100000,
+              "uuid": "bc733add5ed849198052da92cb67b0c4"
+            }
+          ],
+          "items": [
+            "533353552264"
+          ]
+        },
+        "version": "0.0.1"
+      }
+    ],
+    "pageAttribute": {
+      "shopInfo": {
+        "isTmall": true,
+        "sellerId": 2247603103,
+        "sellerNick": "商家测试帐号95",
+        "shopId": 113925482,
+        "shopLogo": "//img.alicdn.com/imgextra/i1/TB1cW09AYr1gK0jSZR0SuvP8XXa.jpg",
+        "shopName": "B2C小店95",
+        "wangwangLink": "//im.m.taobao.com/ww/ad_ww_dialog.htm?to_user=ycy80rLiytTVyrrFOTU%3D&shop_id=113925482"
+      }
+    }
+  }
+}

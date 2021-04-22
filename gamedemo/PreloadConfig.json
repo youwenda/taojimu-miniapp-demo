@@ -1,0 +1,9 @@
+{
+  "resources": [
+    {
+      "name": "bg_depth_blur",
+      "type": "image",
+      "url": "/resources/bg_depth_blur.jpg"
+    }
+  ]
+}
