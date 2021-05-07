@@ -33,4 +33,9 @@ Page({
       path: "pages/mmgame/index",
     };
   },
+  onNavigateToTask() {
+    my.navigateTo({
+      url: '/pages/task/task'
+    });
+  }
 });

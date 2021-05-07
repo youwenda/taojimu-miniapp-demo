@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "任务demo",
+  "usingComponents": {
+    "mx-toast": "plugin://taojimu/mx-toast"
+  }
+}

@@ -1,0 +1,12 @@
+<view class="title">模拟任务</view>
+<view class="body">
+  <view class="btn" onTap="onTaskFavorShop">做任务 - 关注店铺</view>
+  <view class="btn" onTap="onTaskFavorItem">做任务 - 收藏宝贝</view>
+  <view class="btn" onTap="onTaskAddBag">做任务 - 加购宝贝</view>
+  <view class="btn" onTap="onTaskShare">做任务 - 分享</view>
+  <view class="btn" onTap="onTaskVideoLive">做任务-浏览直播页面</view>
+  <view class="btn" onTap="onTaskGoShop">做任务-进入店铺页面</view>
+  <view class="btn" onTap="onTaskJoinMember">做任务-入会</view>
+  <view class="btn" onTap="onTaskQueryInfo">点击查询任务详情</view>
+</view>
+<mx-toast />

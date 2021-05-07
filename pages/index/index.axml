@@ -1,3 +1,4 @@
 <view>
+  <view class="test-task" onTap="onNavigateToTask">任务测试</view>
   <mmgame compExt="{{component.compExt}}" />
 </view>
