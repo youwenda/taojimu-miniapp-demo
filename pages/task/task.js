@@ -95,7 +95,7 @@ Page({
   onTaskAddBag() {
     plugin.task.addBag({
       id: '636186398674',
-      isShowSku: true,
+      // isShowSku: true,
     })
       .then((data) => {
         my.alert({
@@ -105,9 +105,6 @@ Page({
       })
       .catch((e) => {
         console.log(`task.addBag: fail`, e);
-        my.alert({
-          content: `task.addBag: fail ${JSON.stringify(e)}`,
-        });
       });
   },
   onTaskShare() {
@@ -123,7 +120,11 @@ Page({
     plugin.task.appointLive({ feedId: '8dc80114-55d8-42ea-b6f1-bddc2656c321', duration: 3 });
   },
   onTaskGoShop() {
-    plugin.task.goShop({ shopId: '389878997', duration: 3 });
+    plugin.task.goShop({ shopId: '389878997', duration: 3 }).then(() => {
+      console.log(`task.goShop: success`);
+    }).catch(() => {
+
+    });
   },
   onTaskJoinMember() {
     plugin.task
