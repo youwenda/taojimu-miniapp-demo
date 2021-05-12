@@ -1,3 +1,4 @@
+const taojimu = requirePlugin('taojimu');
 Page({
   onLoad(query) {
     // 页面加载
@@ -5,6 +6,17 @@ Page({
     this.setData({
       component: getApp().globalData.pageConf.componentTree[0]
     });
+
+    setTimeout(() => {
+      taojimu.log.sendHdLog({ 
+        status: 'finished'
+      }).then(() => {
+        my.showToast({ 
+          content: '3s后领取喵币成功'
+        })
+      });
+    }, 3e3);
+
   },
   onReady() {},
   onShow() {
