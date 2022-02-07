@@ -5,9 +5,12 @@
 
 <hdtask initTitle="完成互动任务" completeTitle="挑战任务完成" pos="{{{right: 22, top: 226}}}" />
 
-<mx-task visible="{{visible}}"
-tasks={{tasks}} onDialogClose="onDialogClose" onTaskSuccess="onTaskSuccess" onTaskFail="onTaskFail"
-isShowAllTask="{{isShowAllTask}}"
-taskConfig="{{taskConfig}}"
->
+<mx-task 
+  visible="{{visible}}"
+  tasks={{tasks}} 
+  onDialogClose="onDialogClose" 
+  onTaskSuccess="onTaskSuccess" 
+  onTaskFail="onTaskFail"
+  isShowAllTask="{{isShowAllTask}}"
+  taskConfig="{{taskConfig}}">
 </mx-task>

@@ -2,7 +2,6 @@ Page({
   data: {},
   onLoad() {
     this.setData({
-      target: 'home',
       isFullScreen: true,
       gameIntro: {
         'src': 'https://lego.alicdn.com/res/tjm/v/2247603103_9tJGcNkO18ExnKRf_sd.mp4',
