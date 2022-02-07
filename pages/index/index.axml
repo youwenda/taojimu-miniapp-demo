@@ -1,4 +1,4 @@
-<mx-home a:if="{{visible}}" target="{{target}}" className="{{className}}" onGameStart="onGameStart" onShowRule="onShowRule" onShowPrize="onShowPrize" gameIntro="{{gameIntro}}" isFullScreen="{{isFullScreen}}">
+<mx-home target="{{target}}" className="{{className}}" onGameStart="onGameStart" onShowRule="onShowRule" onShowPrize="onShowPrize" gameIntro="{{gameIntro}}" isFullScreen="{{isFullScreen}}">
   <view class="home-rule" slot="rule">
     <view class="title">1.玩法说明</view>
     <view class="info">活动期间，用户通过每日到访活动页面签到，完成规定的连续签到任务，即可获得“1分钱兑换商品”资格+0.01元零钱（以下简称“1分兑”资格）；用户需要进入页面开启签到进度。</view>

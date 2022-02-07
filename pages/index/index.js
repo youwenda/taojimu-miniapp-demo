@@ -2,7 +2,6 @@ Page({
   data: {},
   onLoad() {
     this.setData({
-      visible: true,
       target: 'home',
       isFullScreen: true,
       gameIntro: {
