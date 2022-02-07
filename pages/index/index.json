@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "mmgame": "/components/mmgame/mmgame",
-    "hdtask": "plugin://taojimu/hdtask"
-  }
+    "mx-home": "@taojimu/mx-home/es/mx-home"
+  },
+  "transparentTitle": "always"
 }

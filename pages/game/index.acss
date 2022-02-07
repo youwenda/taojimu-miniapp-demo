@@ -1,0 +1,14 @@
+.test-task {
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  width: 300rpx;
+  height: 100rpx;
+  margin-left: -150rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  z-index: 1;
+}

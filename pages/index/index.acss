@@ -1,14 +1,15 @@
-.test-task {
-  position: fixed;
-  left: 50%;
-  top: 30%;
-  width: 300rpx;
-  height: 100rpx;
-  margin-left: -150rpx;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10rpx;
-  z-index: 1;
+.home-rule .title {
+  margin-top: 39rpx;
+  font-size: 32rpx;
+  color: #333333;
+  line-height: 32rpx;
+  font-weight: bold;
+}
+.home-rule .info {
+  margin-top: 18rpx;
+  font-size: 26rpx;
+  color: #666666;
+  text-align: justify;
+  line-height: 38rpx;
+  padding-bottom: 12rpx;
 }

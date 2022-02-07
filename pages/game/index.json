@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mmgame": "/components/mmgame/mmgame",
+    "hdtask": "plugin://taojimu/hdtask",
+    "mx-task": "@taojimu/mx-task/es/mx-task"
+  }
+}

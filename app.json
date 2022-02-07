@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/task/task"
+    "pages/game/index"
   ],
   "window": {
     "defaultTitle": "淘积木互动小程序样例"
