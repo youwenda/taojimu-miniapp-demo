@@ -4,7 +4,8 @@
     "pages/game/index"
   ],
   "window": {
-    "defaultTitle": "淘积木互动小程序样例"
+    "defaultTitle": "淘积木互动小程序样例",
+    "allowsBounceVertical": false
   },
   "plugins": {
     "taojimu": {
