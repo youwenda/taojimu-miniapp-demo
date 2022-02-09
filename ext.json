@@ -29,6 +29,11 @@
                 "name": "任务配置",
                 "typevalue": "scene",
                 "group": 1
+              },
+              {
+                "name": "首屏",
+                "typevalue": "home",
+                "group": 2
               }
             ],
             "columns": [
@@ -81,6 +86,22 @@
                       "max": 7,
                       "min": 1
                     }
+                  }
+                ]
+              },
+              {
+                "key": "home",
+                "type": "object",
+                "title": "场景",
+                "group": 2,
+                "columns": [
+                  {
+                    "title": "视频选择",
+                    "extension": {
+                      "recsize": 0.5
+                    },
+                    "key": "video",
+                    "type": "video_unify"
                   }
                 ]
               }
@@ -190,36 +211,80 @@
                     "taskContent": {
                       "type": "addBag",
                       "items_addbag": [
-                        563758784319,
-                        592867532611
+                        586468068490,
+                        533353552264,
+                        563932506881,
+                        535573250788
                       ],
                       "items_addbagPrefetchData": [
                         {
-                          "auction_id": "563758784319",
-                          "spBiz30day": "0",
-                          "totalSold": "0",
+                          "auction_id": "586468068490",
+                          "itemImges": "",
+                          "promoName": "",
                           "preSellType": 0,
-                          "itemTitle": "若丘奶嘴测试请不要拍-一可新产品专用测试进审",
+                          "itemTitle": "测试白盒黑盒创意，请不要拍",
                           "promoMBasePrice": "0.01",
-                          "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2247603103/O1CN01OKb71l1YnDZDOkA3n_!!0-item_pic.jpg",
+                          "isPostFree": "1",
+                          "pictUrl": "//gw.alicdn.com/bao/uploaded/i1/2247603103/O1CN01xnD9Ym1YnDYsTvpMn_!!2-item_pic.png",
+                          "preSellCount": "0",
+                          "isMall": "1",
                           "icQuantityDesc": "有货",
                           "preSellPrice": "",
                           "promoMPrice": "",
+                          "spBiz30day": "0",
+                          "spProvcity": "广东 广州",
+                          "spSeven": "1",
+                          "totalSold": "9",
                           "price": "0.01",
                           "allowApply": false
                         },
                         {
-                          "auction_id": "592867532611",
-                          "spBiz30day": "0",
-                          "totalSold": "1",
+                          "auction_id": "533353552264",
+                          "itemImges": "",
+                          "promoName": "",
                           "preSellType": 0,
-                          "itemTitle": "带主图视频的测试宝贝 请不要拍",
-                          "promoMBasePrice": "0.01",
-                          "pictUrl": "https://gw.alicdn.com/bao/uploaded/i1/2247603103/O1CN01NWxhbH1YnDVzpB4ah_!!2-item_pic.png",
+                          "itemTitle": "坚果（测试，请不要拍）",
+                          "promoMBasePrice": "789.68",
+                          "isPostFree": "1",
+                          "pictUrl": "//gw.alicdn.com/bao/uploaded/i1/2247603103/O1CN01T1eMgT1YnDZ0XNePN_!!2-item_pic.png",
+                          "preSellCount": "0",
+                          "isMall": "1",
                           "icQuantityDesc": "库存紧张",
                           "preSellPrice": "",
                           "promoMPrice": "",
-                          "price": "0.01",
+                          "spBiz30day": "0",
+                          "spProvcity": "北京",
+                          "spSeven": "1",
+                          "totalSold": "0",
+                          "price": "789.68",
+                          "allowApply": false
+                        },
+                        {
+                          "auction_id": "563932506881",
+                          "spBiz30day": "0",
+                          "totalSold": "0",
+                          "preSellType": 0,
+                          "itemTitle": "若丘按摩油测试请不要拍 一可新产品专用测试拒绝",
+                          "promoMBasePrice": "123.00",
+                          "pictUrl": "https://gw.alicdn.com/bao/uploaded/i4/2247603103/O1CN01IjRybs1YnDYx7YGXm_!!2-item_pic.png",
+                          "icQuantityDesc": "库存紧张",
+                          "preSellPrice": "",
+                          "promoMPrice": "",
+                          "price": "123.00",
+                          "allowApply": false
+                        },
+                        {
+                          "auction_id": "535573250788",
+                          "spBiz30day": "0",
+                          "totalSold": "0",
+                          "preSellType": 0,
+                          "itemTitle": "秋冬新款喇叭袖高领打底衫百褶半身裙测试请不要拍",
+                          "promoMBasePrice": "189.59",
+                          "pictUrl": "https://gw.alicdn.com/bao/uploaded/i2/2247603103/O1CN01wdRmrI1YnDZ65lRfh_!!0-item_pic.jpg",
+                          "icQuantityDesc": "有货",
+                          "preSellPrice": "",
+                          "promoMPrice": "",
+                          "price": "189.59",
                           "allowApply": false
                         }
                       ]
@@ -247,7 +312,7 @@
                   {
                     "taskContent": {
                       "type": "appointLive",
-                      "feedId": 306319872001
+                      "feedId": 306535449072
                     },
                     "dailyLimit": 3
                   },
@@ -255,10 +320,9 @@
                     "taskContent": {
                       "type": "goItemDetail",
                       "items_goItemDetail": [
-                        586468068490,
-                        533353552264,
-                        563932506881,
-                        535573250788
+                        563758784319,
+                        592867532611,
+                        587185790764
                       ]
                     },
                     "dailyLimit": 3
@@ -283,7 +347,7 @@
                         "name": "8WUelvWCo9MVQW2AAh5.mp4"
                       }
                     },
-                    "dailyLimit": 5
+                    "dailyLimit": 1
                   },
                   {
                     "taskContent": {
@@ -299,10 +363,21 @@
                     "dailyLimit": 1
                   }
                 ],
-                "current": 11
+                "current": 8
               }
             },
-            "type": "scene"
+            "home": {
+              "video": {
+                "duration": 9,
+                "url": "https://a1.alibabausercontent.com/prod/feupload/user/qr/8ec26900-2118-11ec-b195-99f761cd2a3f.mp4_.mp4",
+                "width": 900,
+                "height": 1600,
+                "snapshot": "https://a1.alibabausercontent.com/prod/feupload/user/qr/8ec26900-2118-11ec-b195-99f761cd2a3f.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_900,h_1600",
+                "poster": "https://a1.alibabausercontent.com/prod/feupload/user/qr/8ec26900-2118-11ec-b195-99f761cd2a3f.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_900,h_1600",
+                "name": "开头视频.mp4"
+              }
+            },
+            "type": "home"
           }
         },
         "version": "0.0.1"

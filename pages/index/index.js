@@ -17,6 +17,9 @@ Page({
     const compExt = getApp().globalData.pageConf.componentTree[0].compExt;
     this.setData({
       isShowAllTask: true,
+      gameIntro: Object.assign(compExt.scenes.home.video, {
+        src: compExt.scenes.home.video.url
+      }),
       tasks: compExt.scenes.scene.task.tasks,
     });
   },
