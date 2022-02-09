@@ -66,6 +66,60 @@
             "api": "goods",
             "key": "items",
             "type": "item_change"
+          },
+          {
+            "key": "tasks",
+            "type": "task",
+            "required": true,
+            "title": "设置任务",
+            "info": "请设置3-9个不同的任务，相同的则以首个为准",
+            "extension": {
+              "scene": "isv",
+              "tasks": [
+                "favorItem",
+                "favorShop",
+                "addBag",
+                "joinMember",
+                "appointLive",
+                "goShop",
+                "goItemDetail",
+                "favorDaren",
+                "favorMiniapp"
+              ],
+              "config": {
+                "favorMiniapp": {
+                  "showDailyLimit": false,
+                  "minDailyLimit": 1,
+                  "maxDailyLimit": 1
+                },
+                "favorShop": {
+                  "showDailyLimit": false,
+                  "minDailyLimit": 1,
+                  "maxDailyLimit": 1
+                },
+                "favorDaren": {
+                  "showDailyLimit": false,
+                  "minDailyLimit": 1,
+                  "maxDailyLimit": 1
+                },
+                "joinMember": {
+                  "showDailyLimit": false,
+                  "minDailyLimit": 1,
+                  "maxDailyLimit": 1
+                },
+                "addBag": {
+                  "checkPreSell": true
+                },
+                "appointLive": {
+                  "name": "观看直播"
+                }
+              },
+              "showDailyLimit": true,
+              "minDailyLimit": 1,
+              "maxDailyLimit": 9,
+              "max": 9,
+              "min": 3
+            }
           }
         ],
         "compExt": {
@@ -132,7 +186,227 @@
           ],
           "items": [
             "533353552264"
-          ]
+          ],
+
+          "tasks": {
+            "tasks": [
+              {
+                "taskContent": {
+                  "type": "watchVideo",
+                  "video": {
+                    "duration": 3,
+                    "url": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4",
+                    "width": 800,
+                    "height": 800,
+                    "snapshot": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_800,h_800",
+                    "poster": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_800,h_800",
+                    "name": "8WUelvWCo9MVQW2AAh5.mp4"
+                  }
+                },
+                "dailyLimit": 5
+              },
+              {
+                "taskContent": {
+                  "type": "dailyCheckin"
+                },
+                "dailyLimit": 3
+              },
+              {
+                "taskContent": {
+                  "type": "favorShop"
+                },
+                "dailyLimit": 1
+              },
+              {
+                "taskContent": {
+                  "type": "favorItem",
+                  "items_favor": [
+                    618137957378, 537061935969, 649721647568, 536027498869, 655126698579,
+                    521901230870
+                  ],
+                  "items_favorPrefetchData": [
+                    {
+                      "allowApply": false,
+                      "auction_id": "618137957378",
+                      "icQuantity": "22586",
+                      "isPostFree": "1",
+                      "itemTitle": "【提前加购】Dyson戴森V10 Slim轻量手持无线吸尘器家用小型除螨",
+                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01tNXfiR1IdZVhmI1fm_!!0-item_pic.jpg",
+                      "price": "3690.00",
+                      "promoMBasePrice": "3690.00",
+                      "promoMPrice": "",
+                      "promoName": "",
+                      "totalSold": "3万+",
+                      "userId": 2089100916
+                    },
+                    {
+                      "allowApply": false,
+                      "auction_id": "537061935969",
+                      "icQuantity": "31761",
+                      "itemTitle": "[加购付定赠滤网]Dyson戴森V8 Fluffy+手持无线吸尘器家用除螨仪",
+                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i4/2089100916/O1CN017Fw2bD1IdZVXi04TI_!!0-item_pic.jpg",
+                      "preSellPrice": "",
+                      "preSellType": 0,
+                      "price": "2990.00",
+                      "promoMBasePrice": "2990.00",
+                      "promoMPrice": "",
+                      "spBiz30day": "2928",
+                      "totalSold": "30万+"
+                    },
+                    {
+                      "allowApply": false,
+                      "auction_id": "649721647568",
+                      "icQuantity": "5784",
+                      "itemTitle": "【预定送梳子套装】Dyson戴森吹风机Supersonic HD08普鲁士蓝护发",
+                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01cnd6mv1IdZVdZ8PQ5_!!0-item_pic.jpg",
+                      "preSellPrice": "",
+                      "preSellType": 0,
+                      "price": "3190.00",
+                      "promoMBasePrice": "3190.00",
+                      "promoMPrice": "",
+                      "spBiz30day": "2594",
+                      "totalSold": "3678"
+                    },
+                    {
+                      "allowApply": false,
+                      "auction_id": "536027498869",
+                      "icQuantity": "73",
+                      "itemTitle": "【预定送梳子套装】Dyson戴森吹风机Supersonic HD08紫红色护发",
+                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01tiM5Gi1IdZVdSFub2_!!0-item_pic.jpg",
+                      "preSellPrice": "",
+                      "preSellType": 0,
+                      "price": "3190.00",
+                      "promoMBasePrice": "3190.00",
+                      "promoMPrice": "",
+                      "spBiz30day": "2198",
+                      "totalSold": "30万+"
+                    },
+                    {
+                      "allowApply": false,
+                      "auction_id": "655126698579",
+                      "icQuantity": "3379",
+                      "itemTitle": "[加购付定赠滤网]Dyson戴森V12 total clean extra手持无线吸尘器",
+                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i2/2089100916/O1CN01EfGGYi1IdZVVHoRbf_!!0-item_pic.jpg",
+                      "preSellPrice": "",
+                      "preSellType": 0,
+                      "price": "4990.00",
+                      "promoMBasePrice": "4990.00",
+                      "promoMPrice": "",
+                      "spBiz30day": "92",
+                      "totalSold": "115"
+                    },
+                    {
+                      "allowApply": false,
+                      "auction_id": "521901230870",
+                      "icQuantity": "2253",
+                      "itemTitle": "【双11抢先加购】Dyson戴森AM10 除菌加湿器孕妇婴儿家用超细水雾",
+                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01bJ2R4A1IdZVS92mh1_!!0-item_pic.jpg",
+                      "preSellPrice": "",
+                      "preSellType": 0,
+                      "price": "3890.00",
+                      "promoMBasePrice": "3890.00",
+                      "promoMPrice": "",
+                      "spBiz30day": "188",
+                      "totalSold": "3万+"
+                    }
+                  ]
+                },
+                "dailyLimit": 5
+              },
+              {
+                "taskContent": {
+                  "type": "joinMember"
+                },
+                "dailyLimit": 1
+              },
+              {
+                "taskContent": {
+                  "type": "favorDaren",
+                  "darenId": "2208728948483",
+                  "label": "李佳琪"
+                },
+                "dailyLimit": 1
+              },
+              {
+                "taskContent": {
+                  "type": "favorMiniapp",
+                  "miniappId": "3000000027280761",
+                  "label": "天猫好房"
+                },
+                "dailyLimit": 1
+              },
+              {
+                "taskContent": {
+                  "type": "goShop"
+                },
+                "dailyLimit": 3
+              },
+              {
+                "taskContent": {
+                  "type": "appointLive",
+                  "feedId": 306813489767
+                },
+                "dailyLimit": 3
+              },
+              {
+                "taskContent": {
+                  "type": "addBag",
+                  "items_addbag": [650479580883, 655572723300],
+                  "items_addbagPrefetchData": [
+                    {
+                      "allowApply": false,
+                      "auction_id": "650479580883",
+                      "icQuantity": "1875",
+                      "itemTitle": "[全新配色]Dyson戴森吹风机Supersonic HD08亮铜镍家用负离子护发",
+                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01bY1voz1IdZVOSdKkC_!!0-item_pic.jpg",
+                      "preSellPrice": "",
+                      "preSellType": 0,
+                      "price": "3190.00",
+                      "promoMBasePrice": "3190.00",
+                      "promoMPrice": "",
+                      "spBiz30day": "79",
+                      "totalSold": "95"
+                    },
+                    {
+                      "allowApply": false,
+                      "auction_id": "655572723300",
+                      "icQuantity": "2082",
+                      "itemTitle": "【预定送梳子套装】Dyson戴森Airwrap美发造型器HS01自动卷发棒",
+                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i4/2089100916/O1CN01R8iLpd1IdZVX63sE3_!!0-item_pic.jpg",
+                      "preSellPrice": "",
+                      "preSellType": 0,
+                      "price": "3990.00",
+                      "promoMBasePrice": "3990.00",
+                      "promoMPrice": "",
+                      "spBiz30day": "630",
+                      "totalSold": "802"
+                    }
+                  ]
+                },
+                "dailyLimit": 3
+              },
+              {
+                "taskContent": {
+                  "type": "goItemDetail",
+                  "items_goItemDetail": [650479580883, 655572723300]
+                },
+                "dailyLimit": 3
+              },
+              {
+                "taskContent": {
+                  "type": "share"
+                },
+                "dailyLimit": 3
+              },
+              {
+                "taskContent": {
+                  "type": "shareForHelp"
+                },
+                "dailyLimit": 3
+              }
+            ],
+            "current": 0
+          }
         },
         "version": "0.0.1"
       }
