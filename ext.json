@@ -10,402 +10,299 @@
       {
         "meta": [
           {
-            "title": "背景图片",
+            "key": "baseMiniRender",
+            "type": "object",
+            "title": "",
+            "columns": [],
             "extension": {
-              "recdimension": "750x0",
-              "recformat": "jpg",
-              "recsize": 0.5,
-              "check": {}
-            },
-            "key": "r_bg",
-            "type": "image"
-          },
-          {
-            "title": "游戏开始文案",
-            "extension": {
-              "maxLength": 10
-            },
-            "key": "startText",
-            "type": "text"
-          },
-          {
-            "title": "游戏次数设置",
-            "extension": {
-              "texttype": "number",
-              "min": 1,
-              "max": 10
-            },
-            "key": "txtChanges",
-            "type": "text"
-          },
-          {
-            "title": "游戏标题颜色",
-            "key": "mcGameTitle",
-            "type": "colorpicker"
-          },
-          {
-            "title": "活动日期范围",
-            "key": "timeRange",
-            "type": "datepickerwrapper"
-          },
-          {
-            "title": "优惠券选择",
-            "min": 1,
-            "max": 2,
-            "api": "coupons",
-            "key": "coupons",
-            "type": "item_change",
-            "extension": {
-              "prefetch": true
+              "global": true,
+              "miniRender": true
             }
           },
           {
-            "title": "宝贝选择",
-            "min": 1,
-            "max": 1,
-            "api": "goods",
-            "key": "items",
-            "type": "item_change"
-          },
-          {
-            "key": "tasks",
-            "type": "task",
-            "required": true,
-            "title": "设置任务",
-            "info": "请设置3-9个不同的任务，相同的则以首个为准",
+            "type": "radio_detail",
+            "key": "scenes",
+            "title": "任务配置",
+            "label": "编辑活动场景",
+            "options": [
+              {
+                "name": "任务配置",
+                "typevalue": "scene",
+                "group": 1
+              }
+            ],
+            "columns": [
+              {
+                "key": "scene",
+                "type": "object",
+                "title": "场景",
+                "group": 1,
+                "columns": [
+                  {
+                    "key": "task",
+                    "type": "task",
+                    "title": "设置任务",
+                    "info": "最少1个最多7个",
+                    "required": true,
+                    "extension": {
+                      "scene": "isv",
+                      "tasks": [
+                        "favorItem",
+                        "favorShop",
+                        "addBag",
+                        "joinMember",
+                        "share",
+                        "appointLive",
+                        "goShop",
+                        "goItemDetail",
+                        "favorDaren",
+                        "watchVideo",
+                        "dailyCheckin",
+                        "favorMiniapp"
+                      ],
+                      "config": {
+                        "share": {
+                          "name": "分享到群",
+                          "minDailyLimit": 1,
+                          "maxDailyLimit": 20
+                        },
+                        "appointLive": {
+                          "name": "观看直播",
+                          "showDailyLimit": false
+                        },
+                        "addBag": {
+                          "itemMin": 1,
+                          "itemMax": 4
+                        }
+                      },
+                      "showDailyLimit": true,
+                      "minDailyLimit": 1,
+                      "maxDailyLimit": 50,
+                      "max": 7,
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            ],
             "extension": {
-              "scene": "isv",
-              "tasks": [
-                "favorItem",
-                "favorShop",
-                "addBag",
-                "joinMember",
-                "appointLive",
-                "goShop",
-                "goItemDetail",
-                "favorDaren",
-                "favorMiniapp"
-              ],
-              "config": {
-                "favorMiniapp": {
-                  "showDailyLimit": false,
-                  "minDailyLimit": 1,
-                  "maxDailyLimit": 1
-                },
-                "favorShop": {
-                  "showDailyLimit": false,
-                  "minDailyLimit": 1,
-                  "maxDailyLimit": 1
-                },
-                "favorDaren": {
-                  "showDailyLimit": false,
-                  "minDailyLimit": 1,
-                  "maxDailyLimit": 1
-                },
-                "joinMember": {
-                  "showDailyLimit": false,
-                  "minDailyLimit": 1,
-                  "maxDailyLimit": 1
-                },
-                "addBag": {
-                  "checkPreSell": true
-                },
-                "appointLive": {
-                  "name": "观看直播"
-                }
-              },
-              "showDailyLimit": true,
-              "minDailyLimit": 1,
-              "maxDailyLimit": 9,
-              "max": 9,
-              "min": 3
+              "scene": true
             }
           }
         ],
         "compExt": {
-          "r_bg": {
-            "src": "https://gw.alicdn.com/imgextra/i4/O1CN01RGxO1L1oRivZfPS55_!!6000000005222-0-tps-750-1624.jpg",
-            "width": 750,
-            "height": 1624,
-            "extension": "jpg"
-          },
-          "startText": "您还有    次机会",
-          "txtChanges": "10",
-          "mcGameTitle": [
-            "#ff003c"
-          ],
-          "timeRange": {
-            "dates": [
-              1619020800000,
-              1619625600000
-            ]
-          },
-          "coupons": [
-            4060260943,
-            4079880234
-          ],
-          "couponsPrefetchData": [
-            {
-              "amount": 100,
-              "applyCount": 20,
-              "applyPlace": "1,2,3",
-              "couponType": 0,
-              "endTime": 1622476799000,
-              "instruction": "使用说明",
-              "isExpire": false,
-              "isPublic": true,
-              "spreadId": 5681547233,
-              "startFee": 1000000,
-              "startTime": 1617897600000,
-              "status": 1,
-              "supplierId": 2247603103,
-              "templateCode": 4060260943,
-              "title": "石头预发券测试",
-              "totalCount": 100000,
-              "uuid": "f6f3f567cb9a4c51a067345bd101f307"
-            },
-            {
-              "amount": 100,
-              "applyCount": 21,
-              "applyPlace": "1,2,3",
-              "couponType": 0,
-              "endTime": 1622476799000,
-              "instruction": "使用说明",
-              "isExpire": false,
-              "isPublic": true,
-              "spreadId": 5712894289,
-              "startFee": 999900,
-              "startTime": 1618588800000,
-              "status": 1,
-              "supplierId": 2247603103,
-              "templateCode": 4079880234,
-              "title": "石头测试券",
-              "totalCount": 100000,
-              "uuid": "bc733add5ed849198052da92cb67b0c4"
-            }
-          ],
-          "items": [
-            "533353552264"
-          ],
-
-          "tasks": {
-            "tasks": [
-              {
-                "taskContent": {
-                  "type": "watchVideo",
-                  "video": {
-                    "duration": 3,
-                    "url": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4",
-                    "width": 800,
-                    "height": 800,
-                    "snapshot": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_800,h_800",
-                    "poster": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_800,h_800",
-                    "name": "8WUelvWCo9MVQW2AAh5.mp4"
+          "baseMiniRender": {},
+          "scenes": {
+            "scene": {
+              "task": {
+                "tasks": [
+                  {
+                    "taskContent": {
+                      "type": "favorShop"
+                    },
+                    "dailyLimit": 1
+                  },
+                  {
+                    "taskContent": {
+                      "type": "favorItem",
+                      "items_favor": [
+                        586468068490,
+                        533353552264,
+                        563932506881,
+                        535573250788
+                      ],
+                      "items_favorPrefetchData": [
+                        {
+                          "auction_id": "586468068490",
+                          "itemImges": "",
+                          "promoName": "",
+                          "preSellType": 0,
+                          "itemTitle": "测试白盒黑盒创意，请不要拍",
+                          "promoMBasePrice": "0.01",
+                          "isPostFree": "1",
+                          "pictUrl": "//gw.alicdn.com/bao/uploaded/i1/2247603103/O1CN01xnD9Ym1YnDYsTvpMn_!!2-item_pic.png",
+                          "preSellCount": "0",
+                          "isMall": "1",
+                          "icQuantityDesc": "有货",
+                          "preSellPrice": "",
+                          "promoMPrice": "",
+                          "spBiz30day": "0",
+                          "spProvcity": "广东 广州",
+                          "spSeven": "1",
+                          "totalSold": "9",
+                          "price": "0.01",
+                          "allowApply": false
+                        },
+                        {
+                          "auction_id": "533353552264",
+                          "itemImges": "",
+                          "promoName": "",
+                          "preSellType": 0,
+                          "itemTitle": "坚果（测试，请不要拍）",
+                          "promoMBasePrice": "789.68",
+                          "isPostFree": "1",
+                          "pictUrl": "//gw.alicdn.com/bao/uploaded/i1/2247603103/O1CN01T1eMgT1YnDZ0XNePN_!!2-item_pic.png",
+                          "preSellCount": "0",
+                          "isMall": "1",
+                          "icQuantityDesc": "库存紧张",
+                          "preSellPrice": "",
+                          "promoMPrice": "",
+                          "spBiz30day": "0",
+                          "spProvcity": "北京",
+                          "spSeven": "1",
+                          "totalSold": "0",
+                          "price": "789.68",
+                          "allowApply": false
+                        },
+                        {
+                          "auction_id": "563932506881",
+                          "spBiz30day": "0",
+                          "totalSold": "0",
+                          "preSellType": 0,
+                          "itemTitle": "若丘按摩油测试请不要拍 一可新产品专用测试拒绝",
+                          "promoMBasePrice": "123.00",
+                          "pictUrl": "https://gw.alicdn.com/bao/uploaded/i4/2247603103/O1CN01IjRybs1YnDYx7YGXm_!!2-item_pic.png",
+                          "icQuantityDesc": "库存紧张",
+                          "preSellPrice": "",
+                          "promoMPrice": "",
+                          "price": "123.00",
+                          "allowApply": false
+                        },
+                        {
+                          "auction_id": "535573250788",
+                          "spBiz30day": "0",
+                          "totalSold": "0",
+                          "preSellType": 0,
+                          "itemTitle": "秋冬新款喇叭袖高领打底衫百褶半身裙测试请不要拍",
+                          "promoMBasePrice": "189.59",
+                          "pictUrl": "https://gw.alicdn.com/bao/uploaded/i2/2247603103/O1CN01wdRmrI1YnDZ65lRfh_!!0-item_pic.jpg",
+                          "icQuantityDesc": "有货",
+                          "preSellPrice": "",
+                          "promoMPrice": "",
+                          "price": "189.59",
+                          "allowApply": false
+                        }
+                      ]
+                    },
+                    "dailyLimit": 3
+                  },
+                  {
+                    "taskContent": {
+                      "type": "addBag",
+                      "items_addbag": [
+                        563758784319,
+                        592867532611
+                      ],
+                      "items_addbagPrefetchData": [
+                        {
+                          "auction_id": "563758784319",
+                          "spBiz30day": "0",
+                          "totalSold": "0",
+                          "preSellType": 0,
+                          "itemTitle": "若丘奶嘴测试请不要拍-一可新产品专用测试进审",
+                          "promoMBasePrice": "0.01",
+                          "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2247603103/O1CN01OKb71l1YnDZDOkA3n_!!0-item_pic.jpg",
+                          "icQuantityDesc": "有货",
+                          "preSellPrice": "",
+                          "promoMPrice": "",
+                          "price": "0.01",
+                          "allowApply": false
+                        },
+                        {
+                          "auction_id": "592867532611",
+                          "spBiz30day": "0",
+                          "totalSold": "1",
+                          "preSellType": 0,
+                          "itemTitle": "带主图视频的测试宝贝 请不要拍",
+                          "promoMBasePrice": "0.01",
+                          "pictUrl": "https://gw.alicdn.com/bao/uploaded/i1/2247603103/O1CN01NWxhbH1YnDVzpB4ah_!!2-item_pic.png",
+                          "icQuantityDesc": "库存紧张",
+                          "preSellPrice": "",
+                          "promoMPrice": "",
+                          "price": "0.01",
+                          "allowApply": false
+                        }
+                      ]
+                    },
+                    "dailyLimit": 3
+                  },
+                  {
+                    "taskContent": {
+                      "type": "joinMember"
+                    },
+                    "dailyLimit": 1
+                  },
+                  {
+                    "taskContent": {
+                      "type": "share"
+                    },
+                    "dailyLimit": 3
+                  },
+                  {
+                    "taskContent": {
+                      "type": "goShop"
+                    },
+                    "dailyLimit": 3
+                  },
+                  {
+                    "taskContent": {
+                      "type": "appointLive",
+                      "feedId": 306319872001
+                    },
+                    "dailyLimit": 3
+                  },
+                  {
+                    "taskContent": {
+                      "type": "goItemDetail",
+                      "items_goItemDetail": [
+                        586468068490,
+                        533353552264,
+                        563932506881,
+                        535573250788
+                      ]
+                    },
+                    "dailyLimit": 3
+                  },
+                  {
+                    "taskContent": {
+                      "type": "favorDaren",
+                      "darenId": "2208728948483"
+                    },
+                    "dailyLimit": 1
+                  },
+                  {
+                    "taskContent": {
+                      "type": "watchVideo",
+                      "video": {
+                        "duration": 3,
+                        "url": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4",
+                        "width": 800,
+                        "height": 800,
+                        "snapshot": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_800,h_800",
+                        "poster": "https://a1.alibabausercontent.com/prod/feupload/user/qr/c3e1a9a0-2b10-11ec-baf0-fff1de6c9a40.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_800,h_800",
+                        "name": "8WUelvWCo9MVQW2AAh5.mp4"
+                      }
+                    },
+                    "dailyLimit": 5
+                  },
+                  {
+                    "taskContent": {
+                      "type": "dailyCheckin"
+                    },
+                    "dailyLimit": 1
+                  },
+                  {
+                    "taskContent": {
+                      "type": "favorMiniapp",
+                      "miniappId": "3000000027280761"
+                    },
+                    "dailyLimit": 1
                   }
-                },
-                "dailyLimit": 5
-              },
-              {
-                "taskContent": {
-                  "type": "dailyCheckin"
-                },
-                "dailyLimit": 3
-              },
-              {
-                "taskContent": {
-                  "type": "favorShop"
-                },
-                "dailyLimit": 1
-              },
-              {
-                "taskContent": {
-                  "type": "favorItem",
-                  "items_favor": [
-                    618137957378, 537061935969, 649721647568, 536027498869, 655126698579,
-                    521901230870
-                  ],
-                  "items_favorPrefetchData": [
-                    {
-                      "allowApply": false,
-                      "auction_id": "618137957378",
-                      "icQuantity": "22586",
-                      "isPostFree": "1",
-                      "itemTitle": "【提前加购】Dyson戴森V10 Slim轻量手持无线吸尘器家用小型除螨",
-                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01tNXfiR1IdZVhmI1fm_!!0-item_pic.jpg",
-                      "price": "3690.00",
-                      "promoMBasePrice": "3690.00",
-                      "promoMPrice": "",
-                      "promoName": "",
-                      "totalSold": "3万+",
-                      "userId": 2089100916
-                    },
-                    {
-                      "allowApply": false,
-                      "auction_id": "537061935969",
-                      "icQuantity": "31761",
-                      "itemTitle": "[加购付定赠滤网]Dyson戴森V8 Fluffy+手持无线吸尘器家用除螨仪",
-                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i4/2089100916/O1CN017Fw2bD1IdZVXi04TI_!!0-item_pic.jpg",
-                      "preSellPrice": "",
-                      "preSellType": 0,
-                      "price": "2990.00",
-                      "promoMBasePrice": "2990.00",
-                      "promoMPrice": "",
-                      "spBiz30day": "2928",
-                      "totalSold": "30万+"
-                    },
-                    {
-                      "allowApply": false,
-                      "auction_id": "649721647568",
-                      "icQuantity": "5784",
-                      "itemTitle": "【预定送梳子套装】Dyson戴森吹风机Supersonic HD08普鲁士蓝护发",
-                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01cnd6mv1IdZVdZ8PQ5_!!0-item_pic.jpg",
-                      "preSellPrice": "",
-                      "preSellType": 0,
-                      "price": "3190.00",
-                      "promoMBasePrice": "3190.00",
-                      "promoMPrice": "",
-                      "spBiz30day": "2594",
-                      "totalSold": "3678"
-                    },
-                    {
-                      "allowApply": false,
-                      "auction_id": "536027498869",
-                      "icQuantity": "73",
-                      "itemTitle": "【预定送梳子套装】Dyson戴森吹风机Supersonic HD08紫红色护发",
-                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01tiM5Gi1IdZVdSFub2_!!0-item_pic.jpg",
-                      "preSellPrice": "",
-                      "preSellType": 0,
-                      "price": "3190.00",
-                      "promoMBasePrice": "3190.00",
-                      "promoMPrice": "",
-                      "spBiz30day": "2198",
-                      "totalSold": "30万+"
-                    },
-                    {
-                      "allowApply": false,
-                      "auction_id": "655126698579",
-                      "icQuantity": "3379",
-                      "itemTitle": "[加购付定赠滤网]Dyson戴森V12 total clean extra手持无线吸尘器",
-                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i2/2089100916/O1CN01EfGGYi1IdZVVHoRbf_!!0-item_pic.jpg",
-                      "preSellPrice": "",
-                      "preSellType": 0,
-                      "price": "4990.00",
-                      "promoMBasePrice": "4990.00",
-                      "promoMPrice": "",
-                      "spBiz30day": "92",
-                      "totalSold": "115"
-                    },
-                    {
-                      "allowApply": false,
-                      "auction_id": "521901230870",
-                      "icQuantity": "2253",
-                      "itemTitle": "【双11抢先加购】Dyson戴森AM10 除菌加湿器孕妇婴儿家用超细水雾",
-                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01bJ2R4A1IdZVS92mh1_!!0-item_pic.jpg",
-                      "preSellPrice": "",
-                      "preSellType": 0,
-                      "price": "3890.00",
-                      "promoMBasePrice": "3890.00",
-                      "promoMPrice": "",
-                      "spBiz30day": "188",
-                      "totalSold": "3万+"
-                    }
-                  ]
-                },
-                "dailyLimit": 5
-              },
-              {
-                "taskContent": {
-                  "type": "joinMember"
-                },
-                "dailyLimit": 1
-              },
-              {
-                "taskContent": {
-                  "type": "favorDaren",
-                  "darenId": "2208728948483",
-                  "label": "李佳琪"
-                },
-                "dailyLimit": 1
-              },
-              {
-                "taskContent": {
-                  "type": "favorMiniapp",
-                  "miniappId": "3000000027280761",
-                  "label": "天猫好房"
-                },
-                "dailyLimit": 1
-              },
-              {
-                "taskContent": {
-                  "type": "goShop"
-                },
-                "dailyLimit": 3
-              },
-              {
-                "taskContent": {
-                  "type": "appointLive",
-                  "feedId": 306813489767
-                },
-                "dailyLimit": 3
-              },
-              {
-                "taskContent": {
-                  "type": "addBag",
-                  "items_addbag": [650479580883, 655572723300],
-                  "items_addbagPrefetchData": [
-                    {
-                      "allowApply": false,
-                      "auction_id": "650479580883",
-                      "icQuantity": "1875",
-                      "itemTitle": "[全新配色]Dyson戴森吹风机Supersonic HD08亮铜镍家用负离子护发",
-                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i3/2089100916/O1CN01bY1voz1IdZVOSdKkC_!!0-item_pic.jpg",
-                      "preSellPrice": "",
-                      "preSellType": 0,
-                      "price": "3190.00",
-                      "promoMBasePrice": "3190.00",
-                      "promoMPrice": "",
-                      "spBiz30day": "79",
-                      "totalSold": "95"
-                    },
-                    {
-                      "allowApply": false,
-                      "auction_id": "655572723300",
-                      "icQuantity": "2082",
-                      "itemTitle": "【预定送梳子套装】Dyson戴森Airwrap美发造型器HS01自动卷发棒",
-                      "pictUrl": "https://gw.alicdn.com/bao/uploaded/i4/2089100916/O1CN01R8iLpd1IdZVX63sE3_!!0-item_pic.jpg",
-                      "preSellPrice": "",
-                      "preSellType": 0,
-                      "price": "3990.00",
-                      "promoMBasePrice": "3990.00",
-                      "promoMPrice": "",
-                      "spBiz30day": "630",
-                      "totalSold": "802"
-                    }
-                  ]
-                },
-                "dailyLimit": 3
-              },
-              {
-                "taskContent": {
-                  "type": "goItemDetail",
-                  "items_goItemDetail": [650479580883, 655572723300]
-                },
-                "dailyLimit": 3
-              },
-              {
-                "taskContent": {
-                  "type": "share"
-                },
-                "dailyLimit": 3
-              },
-              {
-                "taskContent": {
-                  "type": "shareForHelp"
-                },
-                "dailyLimit": 3
+                ],
+                "current": 11
               }
-            ],
-            "current": 0
+            },
+            "type": "scene"
           }
         },
         "version": "0.0.1"

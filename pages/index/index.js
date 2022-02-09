@@ -17,22 +17,8 @@ Page({
     const compExt = getApp().globalData.pageConf.componentTree[0].compExt;
     this.setData({
       isShowAllTask: true,
-      tasks: compExt.tasks.tasks,
-      taskConfig: {
-        'appointLive': {
-          label: '观看店铺直播',
-          btnText: ['去观看', '已观看'],
-          desc: '完成任务获得1次互动机会',
-          duration: 5,
-        },
-        'watchVideo': {
-          label: '观看视频',
-          btnText: ['去观看', '已观看'],
-          desc: '完成任务获得1次互动机会',
-          duration: 5,
-        },
-      },
-    })
+      tasks: compExt.scenes.scene.task.tasks,
+    });
   },
   onShowRule() {},
   onShowPrize() {},
