@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@taojimu/mx-home": "0.0.3",
-    "@taojimu/mx-task": "0.0.3",
+    "@taojimu/mx-home": "^0.0.5",
+    "@taojimu/mx-task": "^0.0.5",
     "@tbminiapp/mmgamelite-miniapp": "^0.0.1",
     "@tbminiapp/pixi-miniprogram-engine": "^1.0.26"
   }
