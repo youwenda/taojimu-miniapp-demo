@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "mmgame-canvas": "@tbminiapp/mmgamelite-miniapp/lib/components/mmgame-canvas/mmgame-canvas"
-  }
-}

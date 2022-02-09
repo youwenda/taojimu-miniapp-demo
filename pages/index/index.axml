@@ -18,3 +18,13 @@ gameIntro="{{gameIntro}}" >
   奖品列表……
 </view>
 </mx-home>
+
+<mx-task 
+  visible="{{visible}}"
+  tasks={{tasks}} 
+  onCancel="onCancel" 
+  onTaskSuccess="onTaskSuccess" 
+  onTaskFail="onTaskFail"
+  isShowAllTask="{{isShowAllTask}}"
+  taskConfig="{{taskConfig}}">
+</mx-task>

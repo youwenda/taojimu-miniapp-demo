@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/game/index"
+    "pages/index/index"
   ],
   "window": {
     "defaultTitle": "淘积木互动小程序样例",
-    "allowsBounceVertical": false
+    "navigationBarForceEnable": true,
+    "allowsBounceVertical": "NO"
   },
   "plugins": {
     "taojimu": {

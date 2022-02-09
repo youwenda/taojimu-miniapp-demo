@@ -1,6 +1,8 @@
 {
-  "exclude": [
-    "resources/*.fla",
-    "*.fla"
-  ]
+  "taobao-biztype": "taojimu",
+  "exclude": [],
+  "include": [
+    "ext.json"
+  ],
+  "component2": false
 }

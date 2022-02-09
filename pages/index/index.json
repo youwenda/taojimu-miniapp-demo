@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "mx-home": "@taojimu/mx-home/es/mx-home"
+    "mx-home": "@taojimu/mx-home/es/mx-home",
+    "mx-task": "@taojimu/mx-task/es/mx-task"
   },
   "transparentTitle": "always"
 }
