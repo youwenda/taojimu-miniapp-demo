@@ -5,21 +5,12 @@ const taojimu = requirePlugin('taojimu');
 Page({
   data: {
     isFullScreen: true,
-    gameIntro: {
-      'src': 'https://lego.alicdn.com/res/tjm/v/2247603103_9tJGcNkO18ExnKRf_sd.mp4',
-      'width': 600,
-      'height': 480,
-      duration: '3.804000',
-      poster: 'https://lego.alicdn.com/res/tjm/p/2247603103_9tJGcNkO18ExnKRf_snapshot.jpg',
-    },
   },
   onLoad() {
     const compExt = getApp().globalData.pageConf.componentTree[0].compExt;
     this.setData({
       isShowAllTask: true,
-      gameIntro: Object.assign(compExt.scenes.home.video, {
-        src: compExt.scenes.home.video.url
-      }),
+      gameIntro: compExt.scenes.home.video,
       tasks: compExt.scenes.scene.task.tasks,
     });
   },
@@ -37,12 +28,20 @@ Page({
     });
   },
   onTaskSuccess(result) {
-    // result = { chance: 2, { task: count: 3, isCompleted: true ,taskName: "favorItem" };
+    // 示例返回结果：
+    // result = {
+    //   chance: 2, // 游戏机会,
+    //   task: {
+    //     taskName: 'browsePage',
+    //     count: 2, // 任务已经做了2次，
+    //     isCompleted: true | false, // 当天的任务是否已经完成
+    //   },
+    // };
     this.setData({
       visible: false,
     });
   },
   onTaskFail(msg) {
-    // msg = { chance: 2, { msg: "请在真机上进行预览" }
+    // 错误信息示例：msg = "请在真机上进行预览"
   },
 });
