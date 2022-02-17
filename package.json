@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@taojimu/mx-home": "^0.0.7",
-    "@taojimu/mx-task": "^0.0.7"
+    "@taojimu/mx-home": "^0.0.9",
+    "@taojimu/mx-task": "^0.0.10"
   }
 }

@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "mx-home": "@taojimu/mx-home/es/mx-home",
-    "mx-task": "@taojimu/mx-task/es/mx-task"
+    "mx-task": "@taojimu/mx-task/es/mx-task",
+    "hdtask": "plugin://taojimu/hdtask"
   },
   "transparentTitle": "always"
 }
