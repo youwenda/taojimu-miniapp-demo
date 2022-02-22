@@ -34,6 +34,11 @@
                 "name": "首屏",
                 "typevalue": "home",
                 "group": 2
+              },
+              {
+                "name": "奖池",
+                "typevalue": "prize",
+                "group": 3
               }
             ],
             "columns": [
@@ -63,7 +68,8 @@
                         "favorDaren",
                         "watchVideo",
                         "dailyCheckin",
-                        "favorMiniapp"
+                        "favorMiniapp",
+                        "browsePage"
                       ],
                       "config": {
                         "share": {
@@ -102,6 +108,20 @@
                     },
                     "key": "video",
                     "type": "video_unify"
+                  }
+                ]
+              },
+              {
+                "key": "prize",
+                "type": "object",
+                "title": "场景",
+                "group": 3,
+                "columns": [
+                  {
+                    "key": "prize",
+                    "type": "oright",
+                    "required": true,
+                    "title": "权益奖池"
                   }
                 ]
               }
@@ -330,7 +350,8 @@
                   {
                     "taskContent": {
                       "type": "favorDaren",
-                      "darenId": "2208728948483"
+                      "darenId": "2208728948483",
+                      "label": "天猫好房"
                     },
                     "dailyLimit": 1
                   },
@@ -358,12 +379,13 @@
                   {
                     "taskContent": {
                       "type": "favorMiniapp",
-                      "miniappId": "3000000027280761"
+                      "miniappId": "3000000027280761",
+                      "label": "天猫好房"
                     },
                     "dailyLimit": 1
                   }
                 ],
-                "current": 8
+                "current": 0
               }
             },
             "home": {
@@ -375,6 +397,18 @@
                 "snapshot": "https://a1.alibabausercontent.com/prod/feupload/user/qr/8ec26900-2118-11ec-b195-99f761cd2a3f.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_900,h_1600",
                 "poster": "https://a1.alibabausercontent.com/prod/feupload/user/qr/8ec26900-2118-11ec-b195-99f761cd2a3f.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_900,h_1600",
                 "name": "开头视频.mp4"
+              }
+            },
+            "prize": {
+              "prize": {
+                "poolId": 1649250317,
+                "creatorId": 2247603103,
+                "type": 1,
+                "ename": "e85ab8e47eba46ec9066a8d80da4a0b9",
+                "name": "测试奖池",
+                "startTime": "2021-09-23 10:30:00",
+                "endTime": "2021-09-30 00:00:00",
+                "status": 1
               }
             },
             "type": "home"
