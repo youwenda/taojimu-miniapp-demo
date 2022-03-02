@@ -3,7 +3,11 @@ isFullScreen="{{isFullScreen}}"
 onGameStart="onGameStart" 
 onShowRule="onShowRule" 
 onShowPrize="onShowPrize" 
-gameIntro="{{gameIntro}}" >
+gameIntro="{{gameIntro}}"
+gameBgImg="{{{
+  'src': 'https://gw.alicdn.com/imgextra/i2/O1CN01VWMFto1K9SjCsxClH_!!6000000001121-2-tps-750-1624.png',
+  'width': 750,
+  'height': 1624}}}">
 <view class="home-rule" slot="rule">
   <view class="title">1.玩法说明</view>
   <view class="info">活动期间，用户通过每日到访活动页面签到，完成规定的连续签到任务，即可获得“1分钱兑换商品”资格+0.01元零钱（以下简称“1分兑”资格）；用户需要进入页面开启签到进度。</view>
@@ -13,9 +17,6 @@ gameIntro="{{gameIntro}}" >
   <view class="info">活动期间，符合条件的用户通过手机淘宝客户端，进入活动页面，即可根据页面提示参与活动。淘宝或天猫在支付宝等渠道发布的小程序无法参与本活动。</view>
   <view class="title">4.活动时间</view>
   <view class="info">2021年3月8日00:00:00——2022年4月30日23:59:59</view>
-</view>
-<view class="home-prize" slot="prize">
-  奖品列表……
 </view>
 </mx-home>
 

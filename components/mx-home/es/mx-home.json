@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "mx-dialog": "@taojimu/mx-dialog/es/mx-dialog",
+    "mx-video": "@taojimu/mx-video/es/mx-video",
+    "mx-spin": "@taojimu/mx-spin/es/mx-spin"
+  }
+}

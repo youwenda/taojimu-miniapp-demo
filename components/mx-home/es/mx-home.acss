@@ -1,0 +1,376 @@
+.mx-home {
+  position: relative;
+  width: 100%;
+}
+.mx-home .mx-image {
+  uc-perf-stat-ignore: image;
+}
+.mx-home .mx-dialog {
+  max-height: 1080rpx;
+  overflow: hidden !important;
+}
+.mx-home .mx-dialog-content {
+  margin-top: 110rpx;
+  width: 750rpx;
+  position: relative;
+}
+.mx-home .mx-dialog-content .mx-dialog-header {
+  width: 100%;
+  height: 200rpx;
+  position: absolute;
+  top: -90rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-main {
+  border-radius: 48rpx 48rpx 0 0;
+  box-sizing: border-box;
+  padding: 64rpx 12rpx 0;
+  overflow: hidden;
+  box-shadow: 0 0.04rem 0.06rem rgba(255, 255, 255, 0.35) inset;
+}
+.mx-home .mx-dialog-content .mx-dialog-body {
+  background-color: #fff;
+  border-radius: 24rpx 24rpx 0 0;
+  padding: 50rpx 30rpx 40rpx;
+  box-sizing: border-box;
+  min-height: 348rpx;
+  max-height: 906rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-body .mx-spin-nested-loading {
+  position: static !important;
+}
+.mx-home .mx-dialog-content .mx-dialog-body .mx-spin-nested-loading .mx-spin {
+  max-height: auto !important;
+  top: auto;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize {
+  margin-bottom: 24rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-empty {
+  font-size: 36rpx;
+  color: #6f4047;
+  font-weight: bold;
+  height: 200rpx;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton,
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon,
+.mx-home .mx-dialog-content .mx-dialog-prize-product,
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket {
+  background: rgba(253, 23, 23, 0.1);
+  width: 678rpx;
+  height: 170rpx;
+  position: relative;
+  border-radius: 24rpx;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  color: #fd1717;
+  box-sizing: border-box;
+  padding-left: 26rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton-left,
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-left,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-left,
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-left {
+  width: 124rpx;
+  margin-right: 30rpx;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton-center,
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-center,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-center,
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-center {
+  width: 352rpx;
+  line-height: 1;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-icon,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background-color: #fff;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-icon .mx-image,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-icon .mx-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 40rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-title,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-title {
+  width: 124rpx;
+  height: 28rpx;
+  margin-top: 12rpx;
+  background: #fdd1d1;
+  border-radius: 14rpx;
+  font-size: 20rpx;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-amount,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-amount {
+  font-size: 64rpx;
+  font-weight: bold;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-rmb,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-rmb {
+  font-size: 36rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-condition,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-condition {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-info,
+.mx-home .mx-dialog-content .mx-dialog-prize-product-info {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-btn,
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-btn {
+  width: 120rpx;
+  height: 50rpx;
+  box-sizing: border-box;
+  border-radius: 25rpx;
+  text-align: center;
+  font-size: 28rpx;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  border: 1rpx solid;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-coupon-circle {
+  position: absolute;
+  left: -9rpx;
+  top: 50%;
+  margin-top: -9rpx;
+  width: 18rpx;
+  height: 18rpx;
+  background-color: #fff;
+  border-radius: 9rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-product {
+  background-color: #fb4926;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-product-center {
+  color: #fff;
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 33rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-product-text {
+  margin-bottom: 4rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-product-btn {
+  color: #fff;
+  width: 120rpx;
+  padding: 0 12rpx;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  box-sizing: border-box;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket {
+  width: 678rpx;
+  padding-left: 0;
+  border: none;
+  background-image: url('https://gw.alicdn.com/imgextra/i4/O1CN01M3yrWg294vCndPDnx_!!6000000008015-2-tps-679-167.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  uc-perf-stat-ignore: image;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-left {
+  width: 190rpx;
+  margin-right: 0;
+  color: #f23030;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-center {
+  width: 342rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-amount {
+  font-weight: bold;
+  font-size: 83.71rpx;
+  white-space: nowrap;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-text {
+  letter-spacing: -3rpx;
+  white-space: nowrap;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-rmb {
+  font-size: 36rpx;
+  margin-left: 3rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-condition {
+  font-size: 36rpx;
+  color: #ffffff;
+  font-weight: bold;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-info {
+  margin-top: 14rpx;
+  opacity: 0.8;
+  font-size: 30.91rpx;
+  color: #ffffff;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-redpacket-btn {
+  border: none;
+  color: #955211;
+  background-image: radial-gradient(circle at 50% 44%, #ffffff 0%, #fbbda6 104%);
+  box-shadow: inset 0 0 10rpx 0 #ffe7ce;
+  border-radius: 28.33rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton {
+  background: #fafafa !important;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-title,
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-amount,
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-condition,
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-info {
+  background: #eaeaea;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-amount,
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-condition,
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-info {
+  height: 30rpx;
+  border-radius: 8rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-amount {
+  width: 100rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-condition {
+  width: 200rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-info {
+  width: 300rpx;
+}
+.mx-home .mx-dialog-content .mx-dialog-prize-skeleton .mx-dialog-prize-coupon-btn {
+  border-color: #eaeaea;
+}
+.mx-home-fullScreen {
+  height: 100vh;
+  overflow: hidden;
+}
+.mx-home-bg {
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+          justify-content: center;
+  uc-perf-stat-ignore: image;
+}
+.mx-home-bg .mx-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.mx-home-gameMainImg {
+  position: absolute;
+  top: 332rpx;
+  left: 50%;
+  margin-left: -340rpx;
+  width: 680rpx;
+  height: 950rpx;
+  overflow: hidden;
+}
+.mx-home-gameMainImg .mx-image {
+  width: 100%;
+  height: 100%;
+}
+.mx-home-gameIntro {
+  position: absolute;
+  top: 633rpx;
+  left: 50%;
+  margin-left: -300rpx;
+  width: 600rpx;
+  height: 480rpx;
+  overflow: hidden;
+  border-radius: 24rpx;
+}
+.mx-home-gameIntro-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 24rpx;
+}
+.mx-home-gameIntro .mx-video-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24rpx;
+  uc-perf-stat-ignore: image;
+}
+.mx-home-gameIntro .mx-video-wrapper .mx-video {
+  width: 100%;
+  height: calc(100% + 1px);
+  position: relative;
+  border-radius: 24rpx;
+}
+.mx-home-gameIntro .mx-video-wrapper .mx-video-mask {
+  border-radius: 24rpx;
+}
+.mx-home-gameIntro .mx-image {
+  width: 100%;
+  height: 100%;
+}
+.mx-home-startBtn {
+  position: absolute;
+  top: 1134rpx;
+  left: 50%;
+  margin-left: -265rpx;
+  width: 530rpx;
+  height: 100rpx;
+  overflow: hidden;
+}
+.mx-home-startBtn .mx-image {
+  width: 100%;
+  height: 100%;
+}
+.mx-home-ruleBtn,
+.mx-home-prizeBtn {
+  position: absolute;
+  top: 283rpx;
+  left: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden;
+}
+.mx-home-ruleBtn .mx-image,
+.mx-home-prizeBtn .mx-image {
+  width: 100%;
+  height: 100%;
+}
+.mx-home-ruleBtn {
+  left: auto;
+  right: 30rpx;
+}
+.mx-home .mx-dialog-close {
+  top: 20rpx !important;
+}

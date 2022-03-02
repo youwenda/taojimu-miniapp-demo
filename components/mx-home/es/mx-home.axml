@@ -1,0 +1,138 @@
+<import-sjs name="getRewriteURL" from="/components/mx-util/es/getRewriteURL.sjs"/>
+<import-sjs name="getResourceExtension" from="/components/mx-util/es/getResourceExtension.sjs" />
+<import-sjs name="getIndexCropData" from="/components/mx-util/es/getIndexCropData.sjs" />
+<import src="/components/mx-util/es/getIndexCropData.axml" />
+
+<view class="mx-home {{className}} {{isFullScreen ? 'mx-home-fullScreen' : ''}}">
+  <template is="getIndexCropData" data="{{...getIndexCropData(gameBgImg, { isCut: isCutGameBgImg })}}" />
+  <!-- <view class="mx-home-bg">
+    <image class="mx-image" src="{{getRewriteURL(gameBgImg.src)}}" lazy-load="{{lazyload}}" mode="widthFix" />
+  </view> -->
+
+  <view class="mx-home-gameMainImg">
+    <image class="mx-image" mode="aspectFit" src="{{getRewriteURL(gameMainImg.src)}}" lazy-load="{{lazyload}}" />
+  </view>
+  <view class="mx-home-gameIntro">
+    <view class="mx-home-gameIntro-video" style="{{(gameIntro.width < 600 || gameIntro.width / gameIntro.height != 1.25) ? 'background-color: #000;' : ''}}" a:if="{{getResourceExtension(gameIntro.src || gameIntro.url) === 'mp4' || getResourceExtension(gameIntro.src || gameIntro.url) === 'mov'}}">
+      <mx-video
+        duration="{{gameIntro.duration}}"
+        src="{{gameIntro.src || gameIntro.url}}"
+        originVideoWidth="{{gameIntro.width}}"
+        originVideoHeight="{{gameIntro.height}}"
+        poster="{{gameIntro.poster}}"
+        mode="stack"
+        disableController="{{true}}"
+        forceAutoplay="{{true}}"
+        base64="{{gameIntro.base64}}"
+        enableAutoplayWithSound="{{false}}"
+      >
+      </mx-video>
+    </view>
+    <image a:else class="mx-image" src="{{getRewriteURL(gameIntro.src)}}" lazy-load="{{lazyload}}" mode="aspectFit" />
+  </view>
+  <view class="mx-home-startBtn" onTap="onGameStart">
+    <image class="mx-image" mode="aspectFit" src="{{getRewriteURL(startBtnImg.src)}}" lazy-load="{{lazyload}}" />
+  </view>
+  <view class="mx-home-ruleBtn" onTap="onShowRule">
+    <image class="mx-image" mode="aspectFit" src="{{getRewriteURL(ruleBtnImg.src)}}" lazy-load="{{lazyload}}" />
+  </view>
+  <view class="mx-home-prizeBtn" onTap="onShowPrize">
+    <image class="mx-image" mode="aspectFit" src="{{getRewriteURL(prizeBtnImg.src)}}" lazy-load="{{lazyload}}" />
+  </view>
+
+  <mx-dialog a:if="{{hasOpened}}" visible="{{target === 'rule' || target === 'prize'}}" pos="bottom" 
+    disableScroll="{{false}}" onClose="onCancel">
+
+    <view class="mx-dialog-content">
+      <view class="mx-dialog-main" style="background-color: {{dialogBgColor}}">
+        <!-- 规则浮层 -->
+        <scroll-view a:if="{{target === 'rule'}}" class="mx-dialog-body" scroll-y="{{true}}">
+          <slot name="rule" />
+        </scroll-view>
+
+        <!-- 我的奖品浮层 -->
+        <scroll-view a:elif="{{target === 'prize' && prizeList.length}}" class="mx-dialog-body" scroll-y="{{true}}" onScrollToLower="onScrollToLower">
+          <mx-spin type="dot" size="large" spinning="{{spinning}}">
+            <view class="mx-dialog-prize" a:for="{{prizeList}}" key="prize-{{index}}">
+              <!-- 实物奖 -->
+              <view a:if="{{item.rightTypeId == 165}}" class="mx-dialog-prize-product">
+                <view class="mx-dialog-prize-product-left">
+                  <view class="mx-dialog-prize-product-icon">
+                    <image class="mx-image" mode="aspectFit" src="{{getRewriteURL('https://gw.alicdn.com/imgextra/i3/O1CN01YoBKGB253lkNGkOsd_!!6000000007471-2-tps-84-84.png')}}" />
+                  </view>
+                  <view class="mx-dialog-prize-product-title">
+                    实物大奖
+                  </view>
+                </view>
+                <view class="mx-dialog-prize-product-center">
+                  <view class="mx-dialog-prize-product-text">{{item.name}}</view>
+                  <view class="mx-dialog-prize-product-text">中奖日期：{{item.date}}</view>
+                  <view class="mx-dialog-prize-product-text">兑奖码：{{item.rightId}}</view>
+                </view>
+                <view class="mx-dialog-prize-product-btn">截屏联系客服兑奖</view>
+              </view>
+
+              <!-- 优惠券 -->
+              <view a:elif="{{item.rightTypeId == 3}}" class="mx-dialog-prize-coupon">
+                <view class="mx-dialog-prize-coupon-circle"></view>
+                <view class="mx-dialog-prize-coupon-left">
+                  <view class="mx-dialog-prize-coupon-icon">
+                    <image class="mx-image" mode="aspectFit" src="{{getRewriteURL(item.shopLogo)}}" />
+                  </view>
+                  <view class="mx-dialog-prize-coupon-title">
+                    {{item.name}}优惠券
+                  </view>
+                </view>
+                <view class="mx-dialog-prize-coupon-center">
+                  <view class="mx-dialog-prize-coupon-amount"><text class="mx-dialog-prize-coupon-rmb">￥</text>{{item.amount}}</view>
+                  <view class="mx-dialog-prize-coupon-condition">满 {{item.condition}} 元可用</view>
+                  <view class="mx-dialog-prize-coupon-info">{{item.shopName || 店铺}}使用</view>
+                </view>
+                <view class="mx-dialog-prize-coupon-btn" onTap="onGoShop">去使用</view>
+              </view>
+
+              <!-- 红包 -->
+              <view a:elif="{{item.rightTypeId == 1030}}" class="mx-dialog-prize-redpacket">
+                <view class="mx-dialog-prize-redpacket-left">
+                  <view class="mx-dialog-prize-redpacket-amount"><text class="mx-dialog-prize-redpacket-text">{{item.amount}}</text><text class="mx-dialog-prize-redpacket-rmb">元</text></view>
+                </view>
+                <view class="mx-dialog-prize-redpacket-center">
+                  <view class="mx-dialog-prize-redpacket-condition">现金红包</view>
+                  <view class="mx-dialog-prize-redpacket-info">请到我的卡包查看</view>
+                </view>
+                <view class="mx-dialog-prize-redpacket-btn" onTap="onGoShop">去使用</view>
+              </view>
+            </view>
+          </mx-spin>
+        </scroll-view>
+
+        <view a:elif="{{prizeStatus === 'empty' && !prizeList.length}}" class="mx-dialog-body">
+          <view class="mx-dialog-prize-empty">
+            暂时还没有权益哦
+          </view>
+        </view>
+
+        <view a:elif="{{!prizeList.length}}" class="mx-dialog-body">
+          <!-- 展示骨骼屏 -->
+          <view class="mx-dialog-prize-coupon mx-dialog-prize-skeleton">
+            <view class="mx-dialog-prize-coupon-left">
+              <view class="mx-dialog-prize-coupon-icon"></view>
+              <view class="mx-dialog-prize-coupon-title"></view>
+            </view>
+            <view class="mx-dialog-prize-coupon-center">
+              <view class="mx-dialog-prize-coupon-amount"></view>
+              <view class="mx-dialog-prize-coupon-condition"></view>
+              <view class="mx-dialog-prize-coupon-info"></view>
+            </view>
+            <view class="mx-dialog-prize-coupon-btn"></view>
+
+            <view class="mx-dialog-prize-btn"></view>
+          </view>
+
+        </view>
+      </view>
+      <image class="mx-dialog-header" mode="aspectFit" src="{{getRewriteURL((target === 'rule') ? ruleDialogHeaderImg.src : prizeDialogHeaderImg.src)}}" />
+    </view>
+    
+  </mx-dialog>
+</view>
