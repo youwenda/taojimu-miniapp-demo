@@ -14,9 +14,6 @@ gameIntro="{{gameIntro}}" >
   <view class="title">4.活动时间</view>
   <view class="info">2021年3月8日00:00:00——2022年4月30日23:59:59</view>
 </view>
-<view class="home-prize" slot="prize">
-  奖品列表……
-</view>
 </mx-home>
 
 <mx-task 
