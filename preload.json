@@ -1,0 +1,33 @@
+[
+  {
+    "type": "TypeHTTP",
+    "params": {
+      "url":"https://mos.m.taobao.com/taojimu/http-request-isv"
+    }
+  },
+  {
+    "type": "TypeTOP",
+    "params": {
+      "api": "taobao.time.get",
+      "data": {
+        "fields": "tid",
+        "buyer_open_id": "123456",
+        "template": "@template.ext.name"
+      },
+      "validTime":1000,
+      "reusable": "true"
+    }
+  },
+  {
+    "type": "TypeMTOP",
+    "params": {
+      "api": "mtop.alimama.taojimu.miniapp.load",
+      "v": "1.0",
+      "method": "POST",
+      "data": {
+        "pageId": "@template.ext.id",
+        "creator": "@template.ext.creator"
+      }
+    }
+  }
+]
