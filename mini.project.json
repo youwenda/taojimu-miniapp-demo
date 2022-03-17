@@ -2,6 +2,7 @@
   "taobao-biztype": "taojimu",
   "exclude": [],
   "include": [
+    "preload.json",
     "ext.json"
   ],
   "component2": false
