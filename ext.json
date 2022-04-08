@@ -62,6 +62,7 @@
                         "addBag",
                         "joinMember",
                         "share",
+                        "shareForHelp",
                         "appointLive",
                         "goShop",
                         "goItemDetail",
