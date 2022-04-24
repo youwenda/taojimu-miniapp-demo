@@ -1,5 +1,6 @@
 <mx-home 
 isFullScreen="{{isFullScreen}}"
+isShowGameMain="{{isShowGameMain}}"
 onGameStart="onGameStart" 
 onShowRule="onShowRule" 
 onShowPrize="onShowPrize" 

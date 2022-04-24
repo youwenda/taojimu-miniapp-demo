@@ -6,6 +6,7 @@ Page({
   data: {
     isFullScreen: true,
     isShowAllTask: true,
+    isShowGameMain: true,
   },
   onLoad() {
     const { compExt } = getApp().globalData.pageConf.componentTree[0];
