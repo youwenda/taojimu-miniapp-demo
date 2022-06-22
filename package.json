@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@taojimu/mx-home": "^0.0.19",
-    "@taojimu/mx-level-result": "^0.0.15",
-    "@taojimu/mx-task": "^0.0.19"
+    "@taojimu/mx-home": "^1.0.6",
+    "@taojimu/mx-level-result": "^1.0.4",
+    "@taojimu/mx-task": "^1.0.7"
   }
 }
