@@ -1,4 +1,5 @@
 {
+  "enableAppxNg": true,
   "taobao-biztype": "taojimu",
   "exclude": [],
   "include": [
