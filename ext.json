@@ -5,6 +5,7 @@
     "creator": "2247603103",
     "domain": "https://mo.m.tmall.com/page/3369381?shop_id=113925482",
     "id": 3369381,
+    "spm": "spmb",
     "name": "品牌Zone专属页面_202011021744",
     "componentTree": [
       {
@@ -322,7 +323,7 @@
                     "taskContent": {
                       "type": "share"
                     },
-                    "dailyLimit": 3
+                    "dailyLimit": 20
                   },
                   {
                     "taskContent": {
