@@ -1,7 +1,7 @@
 {
   "name": "taojimu-miniapp-demo",
   "version": "1.0.0",
-  "description": "淘积木互动小程序demo",
+  "description": "淘积木互动小程序脚手架",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
