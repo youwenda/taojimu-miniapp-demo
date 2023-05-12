@@ -391,13 +391,13 @@
             },
             "home": {
               "video": {
-                "duration": 9,
-                "url": "https://a1.alibabausercontent.com/prod/feupload/user/qr/8ec26900-2118-11ec-b195-99f761cd2a3f.mp4_.mp4",
-                "width": 900,
-                "height": 1600,
-                "snapshot": "https://a1.alibabausercontent.com/prod/feupload/user/qr/8ec26900-2118-11ec-b195-99f761cd2a3f.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_900,h_1600",
-                "poster": "https://a1.alibabausercontent.com/prod/feupload/user/qr/8ec26900-2118-11ec-b195-99f761cd2a3f.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_900,h_1600",
-                "name": "开头视频.mp4"
+                "duration": 160,
+                "url": "https://a1.alibabausercontent.com/prod/feupload/user/qr/a3db9620-2804-11ec-9416-09a9e03ccd50.mp4_.mp4",
+                "width": 1280,
+                "height": 720,
+                "snapshot": "https://a1.alibabausercontent.com/prod/feupload/user/qr/a3db9620-2804-11ec-9416-09a9e03ccd50.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_1280,h_720",
+                "poster": "https://a1.alibabausercontent.com/prod/feupload/user/qr/a3db9620-2804-11ec-9416-09a9e03ccd50.mp4_.mp4?x-oss-process=video/snapshot,t_0,w_1280,h_720",
+                "name": "资艺琳..mp4"
               }
             },
             "prize": {
