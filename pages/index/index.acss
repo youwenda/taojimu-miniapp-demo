@@ -13,3 +13,16 @@
   line-height: 38rpx;
   padding-bottom: 12rpx;
 }
+.status_text {
+  color: #fff;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.status_text .img {
+  width: 46rpx;
+  height: 46rpx;
+  margin: 0 7rpx;
+}

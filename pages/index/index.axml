@@ -36,4 +36,13 @@ gameIntro="{{gameIntro}}" >
   onContinue="onLevelContinue">
 </mx-level-result>
 
-<hdtask initTitle="完成互动任务" completeTitle="挑战任务完成" pos="{{{right: 22, top: 189}}}" />
+<hdtask initTitle="完成互动任务" completeTitle="挑战任务完成" pos="{{{right: 22, top: 189}}}">
+  <view class="status_text">
+    完成互动任务，
+    <image
+      class="img"
+      src="https://gw.alicdn.com/imgextra/i1/O1CN01Lhx32e1bdYBOC7gpr_!!6000000003488-2-tps-92-92.png"
+    ></image>
+    喵币+5～
+  </view>
+</hdtask>
