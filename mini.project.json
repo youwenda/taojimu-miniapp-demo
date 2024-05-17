@@ -1,5 +1,11 @@
 {
   "taobao-biztype": "taojimu",
+  "scripts": {
+    "watch": "npm run mq4pad",
+    "beforeCompile": "npm run mq4pad",
+    "beforePreview": "npm run mq4pad",
+    "beforeUpload": "npm run mq4pad"
+  },
   "exclude": [],
   "include": [
     "ext.json"

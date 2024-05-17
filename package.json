@@ -4,7 +4,9 @@
   "description": "淘积木互动小程序脚手架",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mq4pad": "postcss-plugin-mq4pad"
+
   },
   "tnpm": {
     "mode": "yarn"
@@ -16,5 +18,9 @@
     "@taojimu/mx-home": "^1.0.6",
     "@taojimu/mx-level-result": "^1.0.4",
     "@taojimu/mx-task": "^1.0.7"
+  },
+  "repository": "git@github.com:youwenda/taojimu-miniapp-demo.git",
+  "devDependencies": {
+    "postcss-plugin-mq4pad": "^1.0.0"
   }
 }
